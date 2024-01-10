@@ -3,19 +3,15 @@ package main
 import (
 	"fmt"
 	"github.com/robfig/cron/v3"
-	"time"
 )
 
 func main() {
 
 	abc()
-	c := time.Ticker{}
 
 	// Create a new cron scheduler
 	go CronJob()
-	for {
 
-	}
 }
 
 func CronJob() {
