@@ -12,7 +12,7 @@ func main() {
 
 	/*Create a new cron scheduler*/
 	go CronJob()
-
+	select {}
 }
 
 func CronJob() {
@@ -38,4 +38,5 @@ func CronJob() {
 
 func abc() {
 	fmt.Println("Cron Job done ... ")
+	fmt.Println("Start a Cron Job done ... ")
 }
